@@ -24,7 +24,7 @@ const Conocenos = () => {
   ];
 
   return (
-    <div className="flex justify-around p-8">
+    <div id="section2" className="flex justify-around p-8 h-screen pt-14">
       <Card doctores={doctores} />
     </div>
   );

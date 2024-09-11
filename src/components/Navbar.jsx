@@ -4,8 +4,8 @@ const Logo = "./src/assets/logo_white.png";
 
 const Navbar = () => {
   return (
-    <div className="flex w-screen h-14 bg-cyan-500 sticky top-0">
-      {/* La navbar tiene el problema de que como siempre esta hasta arriba tapa siempre la parte de arriba de los demas componentes */}
+    <div className="flex w-full h-14 bg-cyan-500 sticky top-0 z-50">
+      {/* La navbar tiene el problema de que como siempre esta hasta arriba tapa siempre la parte de arriba de los demas componentes. (Esto se soluciona con padding top restando el navbar) */}
       <div className="flex w-72 justify-center p-2">
         <img src={Logo} />
       </div>
