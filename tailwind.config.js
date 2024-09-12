@@ -12,7 +12,9 @@ export default {
       },
       colors: {
         babyBlue: "#E4F5FF",
-        primary: "#3763db",
+        primary: "#0044a2",
+        secondary: "#3ecaed",
+        background: "#ffffff",
       },
       maxHeight: {
         0: "0",
