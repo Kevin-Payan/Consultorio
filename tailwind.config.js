@@ -4,14 +4,19 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        default: ["Open Sans", "sans-serif"],
+      },
       listStyleImage: {
         checkmark: 'url("./src/assets/check-solid.svg")',
       },
       colors: {
-        navyBlue: "#05445e",
-        blueGrotto: "#189ab4",
-        blueGreen: "#75e6da",
-        babyBlue: "#d4f1f4",
+        babyBlue: "#E4F5FF",
+        primary: "#3763db",
+      },
+      maxHeight: {
+        0: "0",
+        40: "10rem", // Adjust this value based on your content
       },
     },
   },

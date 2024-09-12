@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Conocenos from "./components/Conocenos";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           voluptatum expedita, rem aliquam.
         </h1>
       </div>
+      <Footer />
     </>
   );
 }
