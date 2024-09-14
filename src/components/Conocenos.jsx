@@ -42,7 +42,7 @@ const Conocenos = () => {
   };
 
   return (
-    <div id="section2" className="flex-col w-screen h-screen pb-8 pt-14">
+    <div id="section2" className="flex-col w-screen min-h-screen pb-8 pt-14">
       <h1 className="text-center font-semibold text-3xl pb-8">
         ¡Conoce a
         <span className="text-primary font-bold"> Nuestros Doctores</span>!
