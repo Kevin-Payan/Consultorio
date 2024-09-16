@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import Mapa from "./Mapa";
+import GeoLocationButton from "./GeoLocationButton";
 
 const Ubicacion = () => {
+  const [userLocation, setUserLocation] = useState(null);
+
   return (
     <div id="section3" className="flex h-screen w-screen bg-primary p-12">
       <div className="flex flex-col text-left p-8">
@@ -13,8 +17,8 @@ const Ubicacion = () => {
         </ul>
       </div>
       <div className="flex flex-col">
-        <h1>Aqui va el mapa</h1>
-        <h1>Aqui va el boton de llevame ahi</h1>
+        <Mapa userLocation={userLocation} />
+        <GeoLocationButton setUserLocation={setUserLocation} />
         <p>Sobre Avenida Francisco I. Madero 1436, 21100 Mexicali BC.</p>
       </div>
     </div>
