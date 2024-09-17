@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Conocenos from "./components/Conocenos";
 import Footer from "./components/Footer";
 import Ubicacion from "./components/Ubicacion";
+import Contacto from "./components/Contacto";
 
 function App() {
   const [activeSection, setActiveSection] = useState("section1");
@@ -42,14 +43,7 @@ function App() {
       <Hero />
       <Conocenos />
       <Ubicacion />
-      <div id="section4" className="h-screen bg-white">
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-          provident, impedit consequuntur maxime modi libero mollitia dicta
-          pariatur perferendis ea voluptates minima cumque error vitae corrupti
-          voluptatum expedita, rem aliquam.
-        </h1>
-      </div>
+      <Contacto />
       <Footer />
     </>
   );

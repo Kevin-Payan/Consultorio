@@ -2,7 +2,7 @@ import React from "react";
 
 const checkmark = "./src/assets/checkmark.svg";
 
-const Card = ({ doctor, isVisible, toggleServices }) => {
+const Card = ({ doctor }) => {
   return (
     <div className="flex flex-col w-52 bg-babyBlue p-4 rounded-lg shadow-md">
       <div className="text-center mb-2">
@@ -16,19 +16,7 @@ const Card = ({ doctor, isVisible, toggleServices }) => {
           className="w-24 h-24 object-cover rounded-full"
         />
       </div>
-      <div className="flex justify-center mb-2 p-2">
-        <button
-          onClick={toggleServices}
-          className="bg-primary text-white px-4 py-2 rounded"
-        >
-          {isVisible ? "Menos Informacion" : "Mas Informacion"}
-        </button>
-      </div>
-      <div
-        className={`p-3 transition-all duration-500 ease-in-out overflow-hidden ${
-          isVisible ? "max-h-45 opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
+      <div className="p-3 transition-all duration-500 ease-in-out overflow-hidden max-h-45 opacity-100">
         <ul className="space-y-2">
           {doctor.services.map((service, index) => (
             <li

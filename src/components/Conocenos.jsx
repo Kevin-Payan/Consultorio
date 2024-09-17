@@ -31,16 +31,6 @@ const Conocenos = () => {
     },
   ];
 
-  const [visibleServices, setVisibleServices] = useState(
-    Array(doctores.length).fill(false)
-  );
-
-  const toggleServices = (index) => {
-    setVisibleServices((prev) =>
-      prev.map((visible, i) => (i === index ? !visible : visible))
-    );
-  };
-
   return (
     <div id="section2" className="flex-col w-screen min-h-screen pb-8 pt-14">
       <h1 className="text-center font-semibold text-3xl pb-8">
@@ -49,12 +39,7 @@ const Conocenos = () => {
       </h1>
       <div className="flex justify-evenly">
         {doctores.map((doctor, index) => (
-          <Card
-            key={index}
-            doctor={doctor}
-            isVisible={visibleServices[index]}
-            toggleServices={() => toggleServices(index)}
-          />
+          <Card key={index} doctor={doctor} />
         ))}
       </div>
     </div>

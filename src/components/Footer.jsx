@@ -7,7 +7,7 @@ const medCar = "./src/assets/med_car.svg";
 
 const Footer = () => {
   return (
-    <div className="flex justify-evenly text-white bg-primary p-2">
+    <div className="flex text-white bg-primary p-2 w-screen justify-evenly">
       <div className="flex p-2 justify-center items-center">
         <Phone className="h-5 w-5 mr-2" />+ 52 (686) 551-9333
       </div>
