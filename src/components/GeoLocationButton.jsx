@@ -26,7 +26,10 @@ const GeoLocationButton = ({ setUserLocation }) => {
 
   return (
     <div className="flex justify-center">
-      <button className="p-2 rounded-md bg-cyan-300" onClick={getLocation}>
+      <button
+        className="p-2 rounded-md bg-white text-primary font-semibold hover:shadow-lg hover:shadow-white/40"
+        onClick={getLocation}
+      >
         Llevame Ahi
       </button>
       {error && <p>{error}</p>}

@@ -29,7 +29,7 @@ export default {
       colors: {
         babyBlue: "#E4F5FF",
         deepSkyBlue: "#00BFFF",
-        primary: "#0044a2",
+        primary: "#265ee3",
         secondary: "#3ecaed",
         background: "#ffffff",
       },

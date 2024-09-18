@@ -9,15 +9,7 @@ const Footer = () => {
   return (
     <div className="flex text-white bg-primary p-2 w-screen justify-evenly">
       <div className="flex p-2 justify-center items-center">
-        <Phone className="h-5 w-5 mr-2" />+ 52 (686) 551-9333
-      </div>
-      <div className="flex p-2 justify-center items-center">
-        <Mail className="h-5 w-5 mr-2" />
-        nieves.unidadmedica@outlook.com
-      </div>
-      <div className="flex p-2 justify-center items-center">
-        <MapPin className="h-5 w-5 mr-2" />
-        Avenida Francisco I. Madero 1436, 21100 Mexicali BC.
+        <p>@2024 by Kevin Payan</p>
       </div>
     </div>
   );
