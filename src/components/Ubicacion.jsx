@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Mapa from "./Mapa";
 import GeoLocationButton from "./GeoLocationButton";
-
-const ubicacion = "./src/assets/address.svg";
+import { MapPin, Clock, Phone, Mail } from "lucide-react";
 
 const Ubicacion = () => {
   const [userLocation, setUserLocation] = useState(null);
@@ -10,28 +9,46 @@ const Ubicacion = () => {
   return (
     <div
       id="section3"
-      className="flex text-white h-screen w-screen bg-primary p-12 pt-14"
+      className="text-white h-screen w-screen bg-primary p-12 pt-14"
     >
-      <div className="flex flex-col text-left p-8 pt-12 justify-evenly">
-        <div className="flex">
-          <h1 className="text-3xl font-medium flex items-center">
-            Encuentranos
-          </h1>
-          <img src={ubicacion} alt="Ubicacion" className="w-24 h-24 p-5" />
+      <h1 className="text-white text-center font-semibold text-3xl">
+        Encuéntranos
+      </h1>
+      <div className="flex">
+        <div className="flex flex-col p-4">
+          <div className="p-4 bg-white/75 rounded-lg opacity-75">
+            <p className="flex pb-8 font-semibold items-center">
+              <MapPin className="h-5 w-5 mr-2" />
+              Nuestra Ubicacion
+            </p>
+            <p className="flex pb-2 items-center">
+              <MapPin className="h-5 w-5 mr-2" />
+              Avenida Francisco I. Madero 1436, 21100 Mexicali BC.
+            </p>
+            <p className="flex pb-2 items-center">
+              <Phone className="h-5 w-5 mr-2" />+ 52 (686) 551-9333
+            </p>
+            <p className="flex pb-2 items-center">
+              <Mail className="h-5 w-5 mr-2" />
+              <h2>nieves.unidadmedica@outlook.com</h2>
+            </p>
+          </div>
+          <div className="p-4 bg-white/75 rounded-lg">
+            <p className="flex pb-6 font-semibold items-center">
+              <Clock className="h-5 w-5 mr-2" />
+              Horario de Atencion
+            </p>
+            <ul>
+              <li>Lunes a Viernes: 8:00 am - 8:00 pm</li>
+              <li>Sábado: 8:00 am - 8:00 pm</li>
+              <li>Domingo: Cerrado</li>
+            </ul>
+          </div>
         </div>
-        <div className="flex flex-col justify-center">
-          <h2 className="p-2">Nuestro Horario:</h2>
-          <ul className="p-2">
-            <li className="p-1">Lunes a Viernes: 8:00 am - 8:00 pm</li>
-            <li className="p-1">Sabado: 8:00 am - 8:00 pm</li>
-            <li className="p-1">Domingo: 8:00 am - 8:00 pm</li>
-          </ul>
+        <div className="flex flex-col p-8 pt-12 items-center">
+          <Mapa userLocation={userLocation} />
+          <GeoLocationButton setUserLocation={setUserLocation} />
         </div>
-      </div>
-      <div className="flex flex-col p-8 pt-12 items-center">
-        <h1>Sobre Avenida Francisco I. Madero 1436, 21100 Mexicali BC.</h1>
-        <Mapa userLocation={userLocation} />
-        <GeoLocationButton setUserLocation={setUserLocation} />
       </div>
     </div>
   );
