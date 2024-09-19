@@ -8,6 +8,7 @@ const Conocenos = () => {
       title: "Pediatra, Inmunólogo",
       image: "./src/assets/female_doctor.svg",
       services: ["Hago x", "Servicio 2", "Servicio 3"],
+      exp: "17 años",
     },
     {
       name: "Dr. Victor Payan Navarro",
@@ -18,16 +19,18 @@ const Conocenos = () => {
         "Vacunas",
         "Seguimiento niño sano",
       ],
+      exp: "+24 años",
     },
     {
       name: "Dra. Laura Isabel Vicente",
       title: "Medico Internista",
       image: "./src/assets/foto_vicente.jpeg",
       services: [
-        "Valoraciones Preoperatorias,",
+        "Valoraciones Preoperatorias",
         "Diabetes e Hipertensión",
         "Adulto joven, medio y tercera edad.",
       ],
+      exp: "20 años",
     },
   ];
 
